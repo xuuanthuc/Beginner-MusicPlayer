@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B1745"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="musicplayer.group3.dev.musicplayer.activity.MainActivity">
+
+    <include
+        layout="@layout/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabBackground="@drawable/statte_tab_layout"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@color/tabTextColor">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/title_song" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/title_albums" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/title_artist" />
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_bg_main"
+        android:layout_weight="1">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <include
+        android:id="@+id/bottom_menu"
+        layout="@layout/bottm_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/radius_song"
+        android:layout_height="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/backback"
+        android:paddingBottom="9dp"
+        android:paddingTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1D0F2F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/imv_image_song"
+            android:layout_width="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:contentDescription="imv_image_song"
+            android:src="@drawable/ic_bg_song" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail_title_song"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bottom_title_song"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_bottom_name_artist"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="-5dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/imv_previous"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#1D0F2F"
+                android:contentDescription="imv_previous"
+                android:padding="5dp"
+                android:src="@drawable/ic_previous" />
+
+            <ImageView
+                android:id="@+id/imv_pause_play"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="imv_pause_play"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/imv_next"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:background="#1D0F2F"
+                android:contentDescription="imv_next"
+                android:padding="5dp"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#1D0F2F"
+        android:layout_height="20dp"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item_song"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/musicicon"
+                android:id="@+id/imv_item_image_song"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_name_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:fontFamily="sans-serif-black"
+
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Co Anh O Day Roi"
+                android:textColor="#DDDDDD"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_item_artist_song"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Trung Qan"
+                android:textColor="#B8B8B8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:id="@+id/imv_animation"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:src="@drawable/play_song_fragment"
+            android:layout_height="30dp"></ImageView>
+    </LinearLayout>
+</RelativeLayout>
